@@ -1,0 +1,21 @@
+{
+  "name": "opencode-vcc",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "pi-vcc for OpenCode: compaction without a model call, and lossless recall of compacted history",
+  "license": "MIT",
+  "main": "./index.ts",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "sync-pi-vcc": "bun scripts/sync-pi-vcc.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.4.2",
+    "typescript": "^7.0.2"
+  }
+}
